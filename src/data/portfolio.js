@@ -4,7 +4,7 @@ export default [
         imgUrl: '/assets/github.png',
         imgUrlDark: '/assets/githubdark.png',
         stack: ['Java', 'React', 'Tailwind', 'Vite', 'Python'],
-        link: 'https://tailwindcss.com/docs/installation/using-postcss'
+        link: 'https://github.com/IamOlgaOlga'
     },
     {
         title: "Developer Portfolio Website",
