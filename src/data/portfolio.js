@@ -12,12 +12,12 @@ export default [
         imgUrlDark:'/assets/portfoliowebsitedark.png',
         stack: ['React', 'Tailwind', 'Vite'],
         link: 'https://github.com/IamOlgaOlga'
-    },
-    {
-        title: "My Persenal Blog Website",
-        imgUrl: '/assets/testPic.png',
-        imgUrlDark: '/assets/testPic.png',
-        stack: ['React', 'Tailwind', 'Vite'],
-        link: 'https://github.com/IamOlgaOlga'
     }
+    // {
+    //     title: "My Persenal Blog Website",
+    //     imgUrl: '/assets/testPic.png',
+    //     imgUrlDark: '/assets/testPic.png',
+    //     stack: ['React', 'Tailwind', 'Vite'],
+    //     link: 'https://github.com/IamOlgaOlga'
+    // }
 ]

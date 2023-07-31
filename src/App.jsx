@@ -8,7 +8,7 @@ import Timeline from './components/timeline';
 
 function App() {
 
-  const [theme, setTheme] = useState(null);
+	const [theme, setTheme] = useState(null);
 
 	useEffect(() => {
 		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -69,7 +69,7 @@ function App() {
     <button
 			type="button"
 			onClick={handleThemeSwitch}
-			className="fixed p-2 z-10 right-20 top-4 bg-stone-500 dark:bg-amber-300 text-lg p-1 rounded-md">
+			className="fixed p-2 z-10 right-4 top-4 bg-stone-500 dark:bg-amber-300 text-lg p-1 rounded-md">
 			{theme === 'dark' ? sun : moon}
 		</button>
     <div className="bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter">
