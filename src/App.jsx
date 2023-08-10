@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Intro from './components/Intro';
 import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Contact from './components/ContactForm';
 import Footer from './components/Footer';
 import Timeline from './components/timeline';
 // import reactLogo from './assets/react.svg'
@@ -77,7 +77,7 @@ function App() {
        			<Intro />
 				<Portfolio />
 				<Timeline />
-				<Contact />
+				{/* <Contact /> */}
 				<Footer />
         </div>
     </div>
