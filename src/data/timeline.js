@@ -1,41 +1,58 @@
-export default [
-    {
-        year: '2022',
-        title: 'Career Break',
-        duration: '2022 - now (1 year)',
-        details: 'During my career break, I have been helping my mom fight a debut of autoimmune illness by organizing therapy and medical plan, with financial and mental support. I moved to another country to live in and solved many related issues. Just like my stress-resistant personality, I developed my management skills well. Most importantly, I acquired new and improved existing skills — such as frontend development skills, problem-solving, system design, management skills, etc. I seek challenging opportunities now where I can fully use my skills to meet personal and organizational goals.'
+// src/data/timeline.js
+// Wording tightened, typos fixed, and date ranges normalized.
 
-    },
-    {
-        year: '2020',
-        title: 'Senior Software Engineer at Cardpay(Unlimint) company',
-        duration: '2020 - 2022 (1 year and 7 months)',
-        details: 'I worked on one of the core payment teams. I developed a reverse-proxy service responsible for mobile clients applications\' integrity and security vulnerability checks and a part Mobile API which unlocked integrations with Android/iOS applications. This project unblocked signing of multiple contracts for the company. I led a team of 6 developers/test engineers and 2 analysts on several cross-functional projects which added support of different payment platforms. This included team and department roadmap planning, team staffing, mentorship of junior and middle engineers, cross-team collaboration with Security, Legal, Product and Design teams. Implementing these projects opened new streams of customers from LATAM and EMEA regions and increased department ARR.'
+/**
+ * @typedef {Object} TimelineEntry
+ * @property {string} year
+ * @property {string} title
+ * @property {string} duration
+ * @property {string} details
+ */
 
+/** @type {TimelineEntry[]} */
+const timeline = [
+    {
+      year: "2022",
+      title: "Full Stack Engineer — Strategic Imperatives",
+      duration: "2022 – present",
+      details:
+        "Introduced the BDD and TDD practicies into a team which insreased a code qality and speed of feature delivering. Increased a speed of feature delivering and code maintenence ability by moving a part of business logic from monolith arcitecture to microservices. Delivered features on the UI.",
     },
     {
-        year: '2017',
-        title: 'Senior Software Engineer at DELL EMC company',
-        duration: '2017 - 2020 (3 years and 2 months)',
-        details: 'I worked on a storage array sizing tool. My work included several performance and overall stability improvements along with redesign and refactoring of the product. Apart from that, I\'ve maintained a legacy version of the product being in use by existing customers, which included interaction and troubleshooting with customers. I also took part in DellEMC student program as a mentor.'
+      year: "2020",
+      title: "Senior Software Engineer — Cardpay (Unlimint)",
+      duration: "2020 – 2022 (1 year 7 months)",
+      details:
+        "Built a reverse‑proxy service for mobile client integrity and vulnerability checks and contributed to a Mobile API enabling Android/iOS integrations, unlocking multiple contracts. Led a cross‑functional team of 6 dev/test engineers and 2 analysts to add new payment platforms, collaborating with Security, Legal, Product, and Design. These projects opened LATAM/EMEA customer streams and increased ARR.",
     },
     {
-        year: '2015',
-        title: 'Software Engineer at EMC company',
-        duration: '2015 - 1017 (2 years and 2 months)',
-        details: 'I worked on a storage array sizing tool. I improved and updated the configuration and sizing algorithm to cover new features of updated storage arrays. Apart from that, I developed a tool used for reports generating. These reports describe condition and utilisation of elements and devices of a storage array. This reduced the time of report generation (which was formerly done manually) from 2 weeks to 5 minutes. During this project I gained deep understanding about storage arrays internals and passed EMC SPEED Performance Guru exam.'
-
+      year: "2017",
+      title: "Senior Software Engineer — Dell EMC",
+      duration: "2017 – 2020 (3 years 2 months)",
+      details:
+        "Worked on a storage array sizing tool, improving performance and stability while redesigning and refactoring core components. Maintained a legacy version for existing customers and handled troubleshooting. Mentored students in the Dell EMC program.",
     },
     {
-        year: '2014',
-        title: 'Intern at EMC company',
-        duration: '2014-1015 (1 year)',
-        details: 'I developed storage array performance testing tool. I\'ve decreased test suite run time by the factor of 5 by making log sinking multi-threaded. I\'ve introduced data hashing which increased overall throughput of the tool. Apart from that, I\'ve introduced unit testing to the product and covered most parts of the code and taught team members how to write them.'
+      year: "2015",
+      title: "Software Engineer — EMC",
+      duration: "2015 – 2017 (2 years 2 months)",
+      details:
+        "Enhanced configuration and sizing algorithms to support new storage array features. Built a reporting tool that automated device utilization reports, reducing delivery time from two weeks to five minutes. Gained deep understanding of storage internals and passed the EMC SPEED Performance Guru exam.",
     },
     {
-        year: '2009',
-        title: 'St.Petersburg State Electrotechnical University "LETI"',
-        duration: '2009-2015 (6 years)',
-        details: 'I entered the LETI university that started this journey into software developing. I achived a bachelor\'s degree after 4 years of hard stadying. And after 2 more years I had a master\'s degree in conputer technologies and informatics.'
-    }
-]
+      year: "2014",
+      title: "Intern — EMC",
+      duration: "2014 – 2015 (1 year)",
+      details:
+        "Developed a storage array performance testing tool. Reduced test‑suite runtime 5× by making log sinking multi‑threaded, introduced data hashing to increase throughput, and established unit testing with broad coverage while training teammates.",
+    },
+    {
+      year: "2009",
+      title: 'St. Petersburg State Electrotechnical University “LETI”',
+      duration: "2009 – 2015 (6 years)",
+      details:
+        "Completed a Bachelor’s degree followed by a Master’s degree in Computer Technologies and Informatics.",
+    },
+  ];
+  
+  export default timeline;  

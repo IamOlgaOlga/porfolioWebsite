@@ -1,39 +1,57 @@
-import React from "react";
-import Title from "./Title";
+import React from 'react';
+import { Title } from './Title';
 
-function ContactForm() {
-    return (
-        <div className="flex flex-col mb-10 mx-auto">
-            <div className="flex justify-center items-center">
-                <form 
-                    act ion="https://getform.io/f/a2365323-8cd9-4fa7-8f7c-c6a43c2b44f0" 
-                    method="POST"
-                    className="flex flex-col w-full md:w-7/12">
-                    <Title>Contact</Title>
-                    <input
-                        type="text"
-                        name="userName"
-                        placeholder="Name"
-                        className="p-2 bg-transparent border-2 rounded-md focus:outline-none"/>
-                    <input
-                        type="text"
-                        name="userEmail"
-                        placeholder="Email"
-                        className="my-2 p-2 bg-transparent border-2 rounded-md focus:outline-none"/>
-                    <textarea
-                        name="userMessage"
-                        placeholder="Message"
-                        rows="10"
-                        className="p-2 mb-4 bg-transparent border-2 rounded-md focus:outline-none"/>
-                    <button
-                        type="button"
-                        className="text-center inline-block px-8 py-3 w-max text-base font-medium rounded-md text-white bg-gradient-to-r from-amber-300 to-fuchsia-300 drop-shadow-md hover:stroke-white">
-                        Work With Me
-                    </button>
-                </form>
-            </div>    
-        </div>
-    )
+export function ContactForm() {
+  return (
+    <div className="mx-auto mb-10 flex flex-col">
+      <div className="flex items-center justify-center">
+        <form
+          action="https://getform.io/f/a2365323-8cd9-4fa7-8f7c-c6a43c2b44f0"
+          method="POST"
+          className="flex w-full flex-col md:w-7/12"
+        >
+          <Title>Contact</Title>
+
+          <label className="sr-only" htmlFor="userName">Name</label>
+          <input
+            id="userName"
+            type="text"
+            name="userName"
+            placeholder="Name"
+            autoComplete="name"
+            required
+            className="rounded-md border-2 bg-transparent p-2 focus:outline-none"
+          />
+
+          <label className="sr-only" htmlFor="userEmail">Email</label>
+          <input
+            id="userEmail"
+            type="email"
+            name="userEmail"
+            placeholder="Email"
+            autoComplete="email"
+            required
+            className="my-2 rounded-md border-2 bg-transparent p-2 focus:outline-none"
+          />
+
+          <label className="sr-only" htmlFor="userMessage">Message</label>
+          <textarea
+            id="userMessage"
+            name="userMessage"
+            placeholder="Message"
+            rows={10}
+            required
+            className="mb-4 rounded-md border-2 bg-transparent p-2 focus:outline-none"
+          />
+
+          <button
+            type="submit"
+            className="inline-block w-max rounded-md bg-gradient-to-r from-amber-300 to-fuchsia-300 px-8 py-3 text-base font-medium text-white drop-shadow-md hover:opacity-90"
+          >
+            Work With Me
+          </button>
+        </form>
+      </div>
+    </div>
+  );
 }
-
-export default ContactForm;

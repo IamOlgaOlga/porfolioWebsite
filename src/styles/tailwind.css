@@ -1,3 +1,26 @@
+/* src/styles/tailwind.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Minimal, safe base layer polish */
+@layer base {
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-stone-900 dark:bg-stone-900 dark:text-stone-300;
+    font-feature-settings: "liga","kern";
+    text-rendering: optimizeLegibility;
+  }
+}
+
+/* Reusable utilities for consistent spacing/typography */
+@layer components {
+  .container-narrow {
+    @apply mx-auto w-11/12 max-w-5xl;
+  }
+  .prose-default {
+    @apply leading-relaxed;
+  }
+}
